@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddThongBao"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/imghinh"
+        android:layout_gravity="center"
+        android:layout_width="210dp"
+        android:layout_height="200dp"
+        android:background="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên Thông Báo:"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTenThongBao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_bg" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nội Dung:"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtNoiDungThongBao"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/rounded_edittext_bg" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvDateThongBAOadd"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/baseline_date_range_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnUploadThongBao"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Update"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/btnBackThongBao"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+</LinearLayout>

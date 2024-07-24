@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".theodoiActivity">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar03"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/orange"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <LinearLayout
+            android:id="@+id/lyo3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="232dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cstr.layout"
+                android:layout_width="126dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/red_banner"
+                android:backgroundTint="#E1D8D8">
+
+                <ImageView
+                    android:id="@+id/giay2"
+                    android:layout_width="100dp"
+                    android:layout_height="85dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/giay2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:id="@+id/txttitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Adidas Facol"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="#39 Đen"
+                    android:textColor="#ACAAAA"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="50dp"
+                    android:text="x1" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="20dp"
+                    android:text="203.000đ"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/my_line3"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/txtlove"
+            app:layout_constraintTop_toBottomOf="@+id/lyo2" />
+
+        <View
+            android:id="@+id/my_line4"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/txtlove"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lyo2" />
+
+
+        <TextView
+            android:id="@+id/txtlove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="Có thể bạn cũng thích"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lyo2" />
+        <LinearLayout
+            android:id="@+id/lyo4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar03"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <TextView
+                android:id="@+id/choxacnhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="108dp"
+               android:layout_marginLeft="30dp"
+                android:text="Chờ xác nhận"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/my_line5"
+                app:layout_constraintHorizontal_bias="0.104"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar03" />
+
+            <TextView
+                android:id="@+id/cholayhang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="40dp"
+                android:text="Chờ lấy hàng"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.875"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar03" />
+            <TextView
+                android:id="@+id/chogiaohang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:layout_marginLeft="30dp"
+                android:text="Chờ giao hàng"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/my_line5"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/my_line5"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar03" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/donhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            android:gravity="center"
+            android:text="Đơn hàng"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.445"
+            app:layout_constraintRight_toLeftOf="@+id/timkiem"
+            app:layout_constraintStart_toStartOf="@+id/toolbar03"
+            app:layout_constraintTop_toTopOf="@+id/toolbar03" />
+
+        <ImageView
+            android:id="@+id/boxchat"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="356dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintRight_toRightOf="@+id/toolbar03"
+            app:layout_constraintStart_toStartOf="@+id/toolbar03"
+            app:layout_constraintTop_toTopOf="@+id/toolbar03"
+            app:srcCompat="@drawable/mess_icon" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/timkiem"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="4dp"
+            app:layout_constraintRight_toLeftOf="@+id/boxchat"
+            app:layout_constraintStart_toStartOf="@+id/toolbar03"
+            app:layout_constraintTop_toTopOf="@+id/toolbar03"
+            app:srcCompat="@drawable/ic_search_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="352dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <View
+                android:id="@+id/my_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/my_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/lyo1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteX="-26dp"
+            tools:layout_editor_absoluteY="394dp" />
+
+        <LinearLayout
+            android:id="@+id/lyo2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="389dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="24dp"
+                android:layout_height="31dp"
+                app:srcCompat="@drawable/truck_ic"
+                android:layout_marginLeft="15dp"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="119dp" />
+            <TextView
+                android:id="@+id/nguoichuanbi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Người bán đang chuẩn bị hàng"
+                android:textColor="@color/orange"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                tools:layout_editor_absoluteX="83dp"
+                tools:layout_editor_absoluteY="131dp" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/my_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/lyo2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <LinearLayout
+            android:id="@+id/lyo1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/lyo3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteX="42dp">
+
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="1 sản phẩm"
+                android:textColor="#9E9D9D" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:text="Thành tiền : "
+                android:textColor="#100F0F" />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="203.000đ"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:background="?android:attr/windowBackground"
+        android:foreground="?attr/selectableItemBackground"
+        app:itemIconTint="@android:color/holo_orange_dark"
+        app:itemTextColor="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.949"
+        app:menu="@menu/bottom_navigation">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerChi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="524dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+
+        tools:layout_editor_absoluteX="0dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

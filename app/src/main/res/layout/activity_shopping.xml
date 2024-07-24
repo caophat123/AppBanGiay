@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShoppingActivity">
+
+        <TextView
+            android:id="@+id/txtShoppingmall"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#FF8C00"
+            android:drawableLeft="@drawable/ic_back_24"
+            android:gravity="center"
+            android:onClick="iconButtonClick"
+            android:text="Thông Báo"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="80dp"
+            android:autoStart="true"
+            android:flipInterval="2000"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivposter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/adidas" />
+            <ImageView
+                android:id="@+id/ivsale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/poster" />
+
+        </ViewFlipper>
+
+        <TextView
+            android:id="@+id/txtMallflashsale"
+            android:layout_width="224dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:text="Hôm nay có gì hot"
+            android:textColor="@color/orange"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewFlipper2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewThongbao"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewFlipper2"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="413dp"
+        android:layout_height="221dp"
+        android:layout_marginBottom="600dp"
+        android:background="@color/orange"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_editor_absoluteX="1dp"
+        app:layout_editor_absoluteY="5dp"/>
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img1"
+        android:layout_width="99dp"
+        android:layout_height="87dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="36dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="156dp"
+        android:text="Sneaker Shop"
+        android:textSize="25sp"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/layoutadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/AdDH"
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:background="@drawable/border3"
+            android:textSize="22dp"
+            android:layout_marginTop="15dp"
+            tools:layout_editor_absoluteX="21dp"
+            tools:layout_editor_absoluteY="297dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/AdProducts"
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border03"
+            android:textSize="22dp"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="379dp" />
+
+        <ImageView
+            android:layout_width="122dp"
+            android:layout_height="89dp"
+            android:layout_alignStart="@+id/AdProducts"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/sshoes" />
+
+        <ImageView
+            android:layout_width="122dp"
+            android:layout_height="89dp"
+            android:layout_alignEnd="@+id/AdDH"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/bill1" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AdDH"
+            android:layout_marginTop="9dp"
+            android:text="Thống kê đơn hàng"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="13dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AdDH"
+            android:layout_marginTop="9dp"
+            android:text="Quản lý sản phẩm"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="212dp"/>
+
+        <Button
+            android:id="@+id/AdTB"
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:background="@drawable/border3"
+            android:textSize="22dp"
+            android:layout_marginTop="10dp"
+            tools:layout_editor_absoluteX="21dp"
+            tools:layout_editor_absoluteY="297dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/txt"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="92dp"
+            android:layout_below="@+id/txt"
+            android:layout_alignEnd="@+id/AdTB"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="245dp"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/noti_51" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:text="Quản lý thông báo"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/txt"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

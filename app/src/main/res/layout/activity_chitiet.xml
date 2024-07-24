@@ -1,0 +1,141 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChitietActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/Toolbar"
+        android:background="@color/orange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Chi tiết sản phẩm"
+        app:titleMarginStart="70dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircleRadius="50dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Toolbar">
+
+        <ImageView
+            android:id="@+id/img_chitiet"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/sn_5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txttensp_chitiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tên sản phẩm"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtgiasp_chitiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:text="230000"
+                android:textColor="#F10404"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:background="@drawable/green_bar"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+
+                    android:id="@+id/minnus"
+                    android:src="@drawable/minus"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/soluong"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:background="@drawable/while_bar"
+                    android:layout_gravity="center"
+                    android:text="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pluss"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:src="@drawable/plus"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnthemvaogiohang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="#FF9800"
+                android:text="@string/th_m_v_o_gi_h_ng"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/layout1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="Mô tả chi tiết sản phẩm"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtmota_chitiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Giày thể thao là những đôi giày được sử dụng trong các hoạt động thể dục thể thao, hay trong những hoạt động tập luyện tăng cường sức khoẻ."
+
+                />
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

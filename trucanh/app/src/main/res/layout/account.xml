@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/hovaten"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/next_ic"
+        tools:layout_editor_absoluteX="380dp"
+        tools:layout_editor_absoluteY="589dp" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/imageView14"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/next_ic"
+        tools:layout_editor_absoluteX="380dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <EditText
+        android:id="@+id/hvt.txt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="484dp"
+        android:ems="10"
+        android:hint="Họ và tên"
+        android:inputType="textPassword"
+        android:textColorHint="#070707"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUser" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="4dp"
+        android:background="?android:attr/windowBackground"
+        android:foreground="?attr/selectableItemBackground"
+        app:itemIconTint="@android:color/holo_orange_dark"
+        app:itemTextColor="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_editor_absoluteX="16dp"
+        app:menu="@menu/bottom_navigation" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="422dp"
+        android:layout_height="220dp"
+        android:layout_marginBottom="600dp"
+        android:background="@color/orange"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ic.cam"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_editor_absoluteX="1dp"
+        app:layout_editor_absoluteY="5dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="38dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cart_24" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="78dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_user" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="132dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="184dp"
+        android:text="USER"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="38dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="764dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_stt" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Tên người dùng"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#171717"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hvt.txt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tenuser"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/next_ic"
+        tools:layout_editor_absoluteX="380dp"
+        tools:layout_editor_absoluteY="348dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword8"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Điện thoại"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#191818"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword7" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/matkhau"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/next_ic"
+        tools:layout_editor_absoluteX="380dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/ngaydinh"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/next_ic"
+        tools:layout_editor_absoluteX="380dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword9"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPassword"
+        android:textColorHint="#050505"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword8" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword11"
+        android:layout_width="408dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="Đổi mật khẩu"
+        android:inputType="textPassword"
+        android:textColorHint="#0E0D0D"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword10"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Ngày sinh"
+        android:inputType="textPassword"
+        android:textColorHint="#191717"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword9" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/dienthoai"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/next_ic"
+        tools:layout_editor_absoluteX="380dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="User"
+        android:textColor="#A59F9F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/hvt.txt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="304dp"
+        android:text="User123"
+        android:textColor="#A59F9F"
+        app:layout_constraintStart_toEndOf="@+id/imageView15"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="324dp"
+        android:text="****46"
+        android:textColor="#A59F9F"
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:text="n***@gmail.com"
+        android:textColor="#A59F9F"
+        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword9"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.712" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="276dp"
+        android:text="Thiết lập ngay"
+        android:textColor="#A59F9F"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword11"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword9"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="38dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mess_icon" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/email"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/next_ic"
+        tools:layout_editor_absoluteX="380dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
